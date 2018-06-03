@@ -1,0 +1,13 @@
+$body-bg:    #474e5d;
+$body-color: #ffffff;
+
+body {
+  font: 20px Montserrat, sans-serif;
+  line-height: 1.8;
+}
+p {font-size: 16px;}
+
+.carousel-control-prev, .carousel-control-next {
+  top: auto!important;
+  bottom: 18px!important;
+}
