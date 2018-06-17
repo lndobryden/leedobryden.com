@@ -12,6 +12,8 @@ deploy:
     secure: jKVJlwXL0UFaflYdWG7yFUnzQ9lZxo9QWKuaEwuZjoLgRL4PayyAmHSUw+8hxcCc3NPb/sT1ew6GeRDZSa6Eep7Dsty8/v6JZkdDzUPCIxw+AylNPI1JHY3bza2RH+pWUJ+2Mk2KXKjxhSWlWTzs1mX7tytMyhV42pQW4RcHRI//Oy40Bvz+zsJhGaVXajd3L/aFh7V1IvqKJc97n8O/IwZCfYsmQdz7CPZMioGayZvOKqGz0Y7g3SzM45sOz2k1v0Rz/9MxmOM6DsAv4twtMbQwi2tPErgeUUBxFcJ8+3eC3aXdnqg0is/HkcgR6nmr1uQZprDNK9lcHdpQR3Vwsdf8rLZbOnFskv0wYjXxR6HdR8gRuvUsNwRvmZdVQy30JbcQCqbgVXmeswa97+RdfkEEbG2Tar6cQv7aW2Gc0XSdWwWS0Mbzkj3mmweQfphSWCYsUYJWz6SVULlPz5APhzpAui2i/hCCSMs4kbrQMeRIEFT1AsUaGuLMx5sqpq6hgYrbvgoujM00qtVO2Uj1q4kYf+3lN97rDz4riaSjKnUshkaNpFzIJAgKtGD0gfpAm2rSXBqaF5ZNfhbZWv1Cp2wfhYrtVRoDzkfKruu3C+QaapAZ1BfvPw08CRqDVe5ihBIPjTl6myu0lAVGZTukRMOfw1rIxTBFXfUZ3qY+kc8=
   bucket: leedobryden.com
   local-dir: dist
+  skip_cleanup: true
+  region: "us-east-1"
   acl: bucket_owner_full_control
   on:
     repo: lndobryden/leedobryden.com
