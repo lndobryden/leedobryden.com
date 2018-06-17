@@ -2,8 +2,7 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import BootstrapVue from 'bootstrap-vue'
-import {VueMasonryPlugin} from 'vue-masonry'
-
+import lightbox from 'vlightbox'
 import App from './App'
 import router from './router'
 
@@ -20,7 +19,7 @@ fontawesome.library.add(regular, brands, solid, faSpinner)
 
 Vue.config.productionTip = false
 Vue.use(BootstrapVue)
-Vue.use(VueMasonryPlugin)
+Vue.use(lightbox)
 
 /* eslint-disable no-new */
 new Vue({

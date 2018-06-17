@@ -28,7 +28,6 @@
     "vue": "^2.5.2",
     "vue-fontawesome": "^0.0.2",
     "vue-markdown": "^2.2.4",
-    "vue-masonry": "^0.10.16",
     "vue-router": "^3.0.1"
   },
   "devDependencies": {

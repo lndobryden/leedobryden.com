@@ -71,6 +71,7 @@ export default {
 
   .card-footer {
     background-color: inherit!important;
+    padding: 1rem;
   }
 
   a:hover {

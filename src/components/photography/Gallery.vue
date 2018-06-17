@@ -1,15 +1,23 @@
 <template>
   <div>
     <b-container>
-      <div v-masonry transition-duration='0.3s'
-           item-selector='.item' gutter=".gutter-item">
-        <div v-masonry-tile class="item" v-for="(image, index) in images" v-bind:key="index">
-          <div class="gutter-item"></div>
-          <b-link @click="showModal(image.url)">
-            <b-img class="gallery-thumbnail" rounded :src=image.url></b-img>
-          </b-link>
-        </div>
-      </div>
+      <b-row>
+        <b-col>
+          <h2>{{ gallery.gallery }}</h2>
+        </b-col>
+      </b-row>
+      <hr />
+      <b-row v-if="index%3 == 0" v-for="(image, index) in gallery.images" v-bind:key="index"
+             align-v="center" class="gallery-row">
+        <b-col v-if="gallery.images[index + i]" v-for="i in 3" v-bind:key="i"
+               class="mb-4">
+          <b-img @click="showModal(gallery.images[index + i].url)"
+                  :src=gallery.images[index+i].url
+                  class="gallery-image">
+
+          </b-img>
+        </b-col>
+      </b-row>
     </b-container>
     <b-modal ref="imagePopup" centered
              hide-footer hide-header
@@ -25,7 +33,7 @@ import axios from 'axios'
 export default {
   data () {
     return {
-      images: [],
+      gallery: {},
       selectedImageURL: ''
     }
   },
@@ -41,7 +49,7 @@ export default {
   async created () {
     axios.get(`https://api.leedobryden.com/gallery/` + this.galleryId)
       .then(response => {
-        this.images = response.data.images
+        this.gallery = response.data
       })
       .catch(e => {
         this.errors.push(e)
@@ -58,15 +66,17 @@ export default {
 
 <style scoped>
 
-  .gutter-item {
-    width:10px;
-    margin-bottom: 10px;
+  .gallery-image {
+    max-height:12rem;
+    object-fit: cover;
+    border-radius: .25rem;
+    z-index: 5;
+    transition: all .2s;
   }
-  .gallery-thumbnail {
-    height: auto;
-    width: auto;
-    max-width: 175px;
-    max-height: 175px;
-  }
+  .gallery-image[class] { width: 15rem; }
 
+  .gallery-image:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+  }
 </style>

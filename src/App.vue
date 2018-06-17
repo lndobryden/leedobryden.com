@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="mx-5">
+  <div id="app">
     <navbar></navbar>
     <router-view/>
     <main-footer></main-footer>
@@ -26,5 +26,7 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
+  margin-left: 8rem;
+  margin-right: 8rem;
 }
 </style>
