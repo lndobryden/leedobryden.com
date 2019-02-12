@@ -11,6 +11,7 @@
           <b-nav-item target="_blank" href="https://www.linkedin.com/in/lee-dobryden-6aa62994"><font-awesome-icon :icon="['fab', 'linkedin']"></font-awesome-icon></b-nav-item>
           <b-nav-item target="_blank" href="https://github.com/lndobryden"><font-awesome-icon :icon="['fab', 'github']"></font-awesome-icon></b-nav-item>
           <b-nav-item target="_blank" href="https://www.instagram.com/lndob/"><font-awesome-icon :icon="['fab', 'instagram']"></font-awesome-icon></b-nav-item>
+          <b-nav-item target="_blank" href="https://medium.com/@lndobryden"><font-awesome-icon :icon="['fab', 'medium']"></font-awesome-icon></b-nav-item>
         </b-navbar-nav>
         <b-navbar-nav class="ml-auto">
           <b-nav-item to="/about">About</b-nav-item>
