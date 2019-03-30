@@ -17,6 +17,7 @@
           <b-list-group-item><p>Montana Marathon (Billings, MT) - 9/17/17 - 4:28:41</p></b-list-group-item>
           <b-list-group-item><p>Richmond Marathon (Richmond, VA) - 11/11/2017 - 4:24:54</p></b-list-group-item>
           <b-list-group-item><p>Disney World Marathon - 1/7/2018 - 4:44:42</p></b-list-group-item>
+          <b-list-group-item><p>Derby Festival Marathon (Louisville, KY) - 4/28/2018 - 4:35:43</p></b-list-group-item>
         </b-list-group>
       </b-col>
       <b-col sm>
