@@ -19,3 +19,8 @@ steps:
 - script: |
     yarn build
   displayName: 'yarn build'
+
+- task: CopyFiles@2
+  inputs:
+    sourceFolder: $(Build.SourcesDirectory)/dist
+    targetFolder: $(Build.ArtifactStagingDirectory)
