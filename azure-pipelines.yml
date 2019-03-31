@@ -9,5 +9,13 @@ steps:
 
 - script: |
     yarn install
+  displayName: 'yarn install'
+
+- script: |
+    yarn lint
+  displayName: 'yarn lint'
+
+
+- script: |
     yarn build
-  displayName: 'yarn install and build'
+  displayName: 'yarn build'
